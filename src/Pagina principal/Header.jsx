@@ -4,7 +4,7 @@ import RegistrarApp from "../AppsComponents/Registrar/RegistrarApp";
 import Inicio from "../AppsComponents/Inicio"
 import "./SigaApp.css"
 import Logo from "./imagenes/LogoSiga.png"
-import CursosApp from "../AppsComponents/CursosApp";
+import CursosApp from "../AppsComponents/Cursos/CursosApp";
 
 const Header = () =>{
 

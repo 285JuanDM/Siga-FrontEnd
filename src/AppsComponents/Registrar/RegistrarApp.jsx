@@ -87,14 +87,8 @@ const RegistrarApp = () => {
                 <Button color="danger" onClick={OcultarModalProfesor}>Cancelar</Button>
             </ModalFooter>
         </Modal>
-
-
-        
-
-       
       </>
     );
-  
   };
   
   export default RegistrarApp;
