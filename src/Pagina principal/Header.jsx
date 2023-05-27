@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import CrearApp from "../AppsComponents/CrearApp"
+import CrearApp from "../AppsComponents/Crear/CrearApp"
 import RegistrarApp from "../AppsComponents/RegistrarApp";
 import Inicio from "../AppsComponents/Inicio"
 import "./SigaApp.css"
