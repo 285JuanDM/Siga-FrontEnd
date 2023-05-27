@@ -7,8 +7,7 @@ const CursosApp = () =>{
             <br />
             <h2 className="text-center">Cursos</h2>
             <br />
-            <Container>
-                
+            <Container> 
                 <TablaCursos />
             </Container>
             
