@@ -1,0 +1,19 @@
+.botonColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-estudiante{
+    margin: 33px;
+    width: 20%;
+    border-color: black;
+    border-width: 1.5px;
+}
+
+.btn-profesor{
+    margin: 33px;
+    width: 20%;
+    border-color: black;
+    border-width: 1.5px;
+}
