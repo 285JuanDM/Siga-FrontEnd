@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import SigaApp from './AppsComponents/SigaApp';
-import CrearApp from './AppsComponents/CrearApp';
-import reportWebVitals from './reportWebVitals';
+import SigaApp from './Pagina principal/SigaApp';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,5 +9,3 @@ root.render(
     <SigaApp />
   </React.StrictMode>
 );
-
-reportWebVitals();
