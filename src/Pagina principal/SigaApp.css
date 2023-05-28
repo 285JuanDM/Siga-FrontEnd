@@ -55,6 +55,16 @@ header .menu .linkCursos{
     border-radius: 5px;
 }
 
+header .menu .linkVer{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+
+
 header .menu li:hover{
     transform: scale(1.1);
 }

@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import CrearApp from "../AppsComponents/Crear/CrearApp"
-import RegistrarApp from "../AppsComponents/Registrar/RegistrarApp";
 import Inicio from "../AppsComponents/Inicio"
 import "./SigaApp.css"
 import Logo from "./imagenes/LogoSiga.png"
-import CursosApp from "../AppsComponents/Cursos/CursosApp";
+import { Error404 } from "../AppsComponents/Error404";
+
 
 const Header = () =>{
 
@@ -18,17 +18,14 @@ const Header = () =>{
                 <nav className="navegacion">
                     <ul className="menu">
                         <li><Link to={""} className="linkPrincipal">Inicio</Link></li>
-                        <li><Link to={"/CrearApp"} className="linkCrear">Crear</Link></li>
-                        <li><Link to={"/RegistrarApp"} className="linkRegistrar">Registrar</Link></li>
-                        <li><Link to={"/Cursos"} className="linkCursos">Cursos</Link></li>
+                        <li><Link to={"/CrearApp"} className="linkCrear">Crear, Registrar y Ver</Link></li>
                     </ul>
                 </nav>
             </header>
                 <Routes>
-                    <Route path="" element={<Inicio/>}/>
-                    <Route path="/CrearApp" element={<CrearApp/>}/>
-                    <Route path="/RegistrarApp" element={<RegistrarApp/>}/>
-                    <Route path="/Cursos" element={<CursosApp/>}/>
+                    <Route exact path="" element={<Inicio/>}/>
+                    <Route exact path="/CrearApp" element={<CrearApp/>}/>
+                    <Route exact path="*" element={<Error404/>}/>
                 </Routes>
             </BrowserRouter>
         </>
