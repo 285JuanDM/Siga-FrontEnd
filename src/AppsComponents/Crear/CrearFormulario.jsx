@@ -5,7 +5,7 @@ const CrearFormulario = ({
   handleNombreEstudianteChange,
   handleNombreProfesorChange,
   handleFacultadChange,
-  handleSubmitCurso,
+  crearCursos,
   asignatura,
   nombreEstudiante,
   nombreProfesor,
@@ -14,7 +14,7 @@ const CrearFormulario = ({
   return (
     <>
       <h2>Crear cursos</h2>
-      <form onSubmit={handleSubmitCurso}>
+      <form onSubmit={crearCursos}>
         <div className="form-group">
           <label>Asignatura:</label>
           <input
@@ -37,7 +37,7 @@ const CrearFormulario = ({
           <label>Profesor:</label>
           <input
             type="text"
-            className="form-control"
+            className="input-group-text"
             value={nombreProfesor}
             onChange={handleNombreProfesorChange}
           />

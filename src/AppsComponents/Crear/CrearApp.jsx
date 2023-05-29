@@ -103,6 +103,17 @@ const App = () => {
     }
   };
 
+  const editarCurso = (curso) => {
+    const updatedCursos = cursos.map((c) => {
+      if (c.nombreAsignatura === curso.nombreAsignatura) {
+        return curso;
+      }
+      return c;
+    });
+
+    setCursos(updatedCursos);
+  };
+
   return (
     <>
       <br />
@@ -114,14 +125,14 @@ const App = () => {
         handleFacultadChange={handleFacultadChange}
         handleSubmitEstudiante={crearEstudiante}
         handleSubmitProfesor={crearProfesor}
-        handleSubmitCurso={crearCursos}
+        crearCursos={crearCursos}
         asignatura={asignatura}
         nombreEstudiante={nombreEstudiante}
         nombreProfesor={nombreProfesor}
         setFacultad={setFacultad}
       />
       <br />
-      <CrearTablaCursosLibres cursosLibres={cursos} eliminarCurso={eliminarCurso} registrarCurso={registrarCurso} />
+      <CrearTablaCursosLibres cursos={cursos} eliminarCurso={eliminarCurso} registrarCurso={registrarCurso} editarCurso={editarCurso} />
       <br />
       <CrearTablaCursosRegistrados cursosDefinitivos={cursosDefinitivos} eliminarCursoDefinitivo={eliminarCursoDefinitivo}/>
       <br />
