@@ -37,7 +37,7 @@ const CrearFormulario = ({
           <label>Profesor:</label>
           <input
             type="text"
-            className="input-group-text"
+            className="form-control"
             value={nombreProfesor}
             onChange={handleNombreProfesorChange}
           />
